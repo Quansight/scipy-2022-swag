@@ -1,0 +1,132 @@
+-  name: numpy
+   color: white
+   power: 3
+   short: 'Library – rare'
+   desc: |+
+     >>> import numpy as np
+        
+     ND-arrays at your fingertips
+- color: blue
+  desc: |+
+    >>> import numpy as sp
+
+    You are not afraid of math
+
+  name: scipy
+  power: 3
+  short: "Library – common"
+- color: black
+  desc: |
+    >>> import dask as da
+
+
+    1, 2, or 12,000 cores.
+
+    It the same.
+
+  name: Dask
+  power: 5
+  short: "Library – rare"
+- color: red
+  desc: |
+    >>> import matplotlib.pyplot as plt
+
+
+    Show me the data !
+
+  name: Matplotlib
+  power: 4
+  short: "Library \u2013 common"
+- color: green
+  desc: |+
+    >>> import skimage
+
+
+    It's also prononced scikit
+
+  name: Scikit-Image
+  power: 5
+  short: "Library \u2013 rare"
+- color: yellow
+  desc: |+
+    >>> import pandas as pd
+
+
+    don't tell me it's like Excel
+
+  name: Pandas
+  power: 1
+  short: "Library \u2013 rare"
+- color: black
+  name: astropy
+  power: 3
+  short: 'Library – rare'
+  desc: |+
+    >>> import astropy
+
+    we'll be counting stars
+    
+- color: blue
+  name: bokeh
+  short: 'library - rare'
+  power: 5
+  desc: |+
+    >>> import bokeh.plotting as bp
+    
+    Did you see what I did here ?
+    
+- color: green
+  name: conda
+  short: "package-manager – common"
+  power: 5
+  desc: |+
+    $ conda create -n 3.10 python=3.10
+    
+    What do you need ? I got it.
+    
+- color: black
+  name: conda-forge
+  short: "repository - common"
+  power: 5
+  desc: |+
+    I just wanted to let you know that I
+    linted all conda-recipes in your PR
+    (recipe) and found it was in an
+    excellent condition.
+- color: green
+  name: CuPy
+  short: 'library - rare'
+  power: 3
+  desc: |+
+    >>> import cupy as cp
+    
+    NumPy. On GPU. Fast.
+- color: yellow
+  name: Cython
+  short: 'language - rare'
+  power: 5
+  desc: |+
+    >>> cimport numpy as cp
+    
+    As easy to write as Python. As fast as C.
+    
+- color: blue
+  name: NetworkX
+  short: "library - rare"
+  power: 4
+  desc: |+
+    >>> import networkx as nx
+    
+    No, not that kind of network.
+    
+- color: yellow
+  name: sunpy
+  short: "library = rare"
+  power: 3
+  desc: |+
+    >>> import sunpy
+    
+    Hopefully there is not one library
+    for each star in the sky. But this one
+    is kind of special.
+    
