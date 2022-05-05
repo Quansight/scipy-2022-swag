@@ -1,0 +1,33 @@
+avatar_url: https://avatars.githubusercontent.com/u/41563?v=4
+bio: Software engineer @ Anaconda. Working on Numba, Blosc and others. Views expressed
+  here are my own.
+blog: None
+company: Anaconda Inc.
+created_at: '2008-12-19T11:43:31Z'
+email: null
+events_url: https://api.github.com/users/esc/events{/privacy}
+followers: 354
+followers_url: https://api.github.com/users/esc/followers
+following: 334
+following_url: https://api.github.com/users/esc/following{/other_user}
+gists_url: https://api.github.com/users/esc/gists{/gist_id}
+gravatar_id: ''
+hireable: null
+html_url: https://github.com/esc
+id: 41563
+location: Berlin, Germany
+login: esc
+name: esc
+node_id: MDQ6VXNlcjQxNTYz
+organizations_url: https://api.github.com/users/esc/orgs
+public_gists: 44
+public_repos: 197
+received_events_url: https://api.github.com/users/esc/received_events
+repos_url: https://api.github.com/users/esc/repos
+site_admin: false
+starred_url: https://api.github.com/users/esc/starred{/owner}{/repo}
+subscriptions_url: https://api.github.com/users/esc/subscriptions
+twitter_username: esc___
+type: User
+updated_at: '2022-04-13T14:43:41Z'
+url: https://api.github.com/users/esc

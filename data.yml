@@ -1,6 +1,7 @@
 - name: SciPy 2022
   color: blue
-  cmap: Blues
+  cmap: bone
+  meth: tri
   short: "Conference – Epic"
   power: 5
   desc: |+
@@ -13,7 +14,9 @@
     
     Thanks to all organisers.
 - name: NumFOCUS
+  maint: lsilen
   color: white
+  meth: tri
   cmap: viridis
   power: 5
   short: 501(c)3 – Legendary
@@ -27,7 +30,9 @@
     
     https://numfocus.org/donate
 - name: xarray
+  maint: max-sixty
   cmap: copper
+  meth: sca
   color: green
   power: 3
   short: "Library - Common"
@@ -40,6 +45,8 @@
     dimensions I call them
     by their first names"
 - name: Zarr
+  maint: grlee77
+  meth: hex
   cmap: plasma
   color: blue
   power: 2
@@ -50,7 +57,9 @@
     
     Also works with small datasets, 
     of less than 128 Tb.
-- name: NumPy
+- name: NumPy 
+  maint: InessaPawson
+  meth: tri
   cmap: Blues
   color: white
   power: 2
@@ -64,7 +73,11 @@
      "I thought it was part of the
      standard library."
 - color: blue
+  
+  maint: melissawm
   cmap: Blues
+  name: SciPy
+  meth: hex
   desc: |+
     >>> import scipy as sp
     
@@ -73,10 +86,13 @@
 
     "I'm not affraid of math."
 
-  name: SciPy
+
   power: 3
   short: "Library – Common"
 - color: black
+  name: Dask
+  maint: chdoig
+  meth: tri
   cmap: copper
   desc: |
     >>> import dask as da
@@ -87,10 +103,11 @@
     "Oh, when you said 48, I though
     you meant Racks, not Cores"
 
-  name: Dask
+
   power: 5
   short: "Library – Rare"
 - color: red
+  meth: tri
   cmap: Reds
   desc: |
     >>> import matplotlib.pyplot as plt
@@ -104,10 +121,14 @@
     itself that clearly"
 
   name: Matplotlib
+  maint: tacaswell
   power: 4
   short: "Library – Common"
 - color: green
-  cmap: Greens
+  name: Scikit-Image
+  maint: stefanv
+  meth: hex
+  cmap: copper
   desc: |+
     >>> import skimage
 
@@ -117,7 +138,6 @@
     "You can just call it scikit for
     short, everybody will understand" 
 
-  name: Scikit-Image
   power: 5
   short: "Library – Rare"
 - color: yellow
@@ -131,12 +151,16 @@
     advertising for a new release"
 
   name: Pandas
+  maint: mroeschke
   power: 1
   short: "Library – Rare"
   cmap: bone
+  meth: sca
 - color: black
-  cmap: Oranges
+  cmap: Purples
   name: astropy
+  maint: embray
+  meth: tri
   power: 3
   short: 'Library – Rare'
   desc: |+
@@ -152,6 +176,7 @@
 - color: blue
   cmap: Purples
   name: bokeh
+  meth: hex
   short: 'library - Rare'
   power: 5
   desc: |+
@@ -167,6 +192,8 @@
 - color: green
   cmap: Greens
   name: conda
+  maint: jaimergp
+  meth: tri
   short: "Package Manager – Common"
   power: 5
   desc: |+
@@ -181,7 +208,9 @@
     
 - color: black
   name: conda-forge
+  maint: ocefpaf
   cmap: bone
+  meth: hex
   short: "Repository - Common"
   power: 5
   desc: |+
@@ -191,7 +220,9 @@
     excellent condition."
 - color: green
   name: CuPy
+  maint: kmaehashi
   cmap: Greens
+  meth: hex
   short: 'Library - Legendary'
   power: 3
   desc: |+
@@ -206,7 +237,9 @@
     
 - color: yellow
   name: Cython
+  maint: scoder
   cmap: Wistia
+  meth: hex
   short: 'Language - Rare'
   power: 5
   desc: |+
@@ -220,6 +253,8 @@
     
 - color: blue
   name: NetworkX
+  maint: jarrodmillman
+  meth: tri
   cmap: Oranges
   short: "Library - Rare"
   power: 4
@@ -236,7 +271,9 @@
     
 - color: yellow
   name: sunpy
+  maint: bsipocz
   cmap: Wistia
+  meth: tri
   short: "Library - Rare"
   power: 3
   desc: |+
@@ -251,7 +288,9 @@
 - color: blue
   cmap: Blues
   note: maybe viridis ?
+  meth: sca
   name: numba
+  maint: esc
   short: "Library – Rare"
   power: 2
   desc: |+    
@@ -265,6 +304,8 @@
     
 - color: red
   name: spyder
+  maint: ccordoba12
+  meth: sca
   cmap: Reds
   short: "IDE - Legendary"
   power: 4
@@ -279,6 +320,8 @@
     
 - color: green
   name: SymPy
+  maint: asmeurer
+  meth: sca
   cmap: Greens
   short: "Library - Common"
   power: 3
@@ -293,7 +336,9 @@
     differentiable nowhere."
 - color: white
   name: IPython
+  maint: Carreau
   cmap: Greys
+  meth: tri
   short: "CLI – Rare"
   power: 5
   desc: |+
@@ -307,7 +352,9 @@
                         -- Fernando Pérez
 - color: red
   name: FEniCS
+  maint: mscroggs
   cmap: Reds
+  meth: hex
   short: "Library - Rare"
   power: 3
   desc: |+
@@ -318,6 +365,8 @@
     contain 'raise from hashes'"
 - color: white
   name: Jupyter
+  maint: willingc
+  meth: sca
   cmap: Oranges
   short: "IDE - Common"
   power: 4
@@ -331,7 +380,9 @@
     sensitivity?"
 - color: black
   cmap: Oranges
+  maint: thomasjpfan
   name: "scikit-learn"
+  meth: hex
   short: "Library - Common"
   power: 3
   desc: |+
