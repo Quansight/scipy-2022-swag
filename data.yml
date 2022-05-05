@@ -1,132 +1,343 @@
--  name: numpy
-   color: white
-   power: 3
-   short: 'Library – rare'
-   desc: |+
+- name: SciPy 2022
+  color: blue
+  cmap: Blues
+  short: "Conference – Epic"
+  power: 5
+  desc: |+
+    July 11 – July 17, Austin, TX
+    
+    Best SciPy Conference – so far.
+    
+    Come for the language,
+    stay for the community.
+    
+    Thanks to all organisers.
+- name: NumFOCUS
+  color: white
+  cmap: viridis
+  power: 5
+  short: 501(c)3 – Legendary
+  desc: |+
+    "Infrastructure is the backbone
+    of economic growth."
+    
+    Nothing  would be possible without
+    all the hands working behing the
+    scene at NumFOCUS.
+    
+    https://numfocus.org/donate
+- name: xarray
+  cmap: copper
+  color: green
+  power: 3
+  short: "Library - Common"
+  desc: |+
+    Package that makes working with
+    labelled multi-dimensional arrays
+    simple, efficient, and fun!
+    
+    "I'm so familiar with higher
+    dimensions I call them
+    by their first names"
+- name: Zarr
+  cmap: plasma
+  color: blue
+  power: 2
+  short: "Library & Fileformat - Rare"
+  desc: |+
+    Chunked, compressed, N-dimensional 
+    arrays storage format and library.
+    
+    Also works with small datasets, 
+    of less than 128 Tb.
+- name: NumPy
+  cmap: Blues
+  color: white
+  power: 2
+  short: 'Library – Rare'
+  desc: |+
      >>> import numpy as np
         
-     ND-arrays at your fingertips
+     ND-arrays at your fingertips.
+     Pronounced "NUM-py" not "NUM-pee".
+        
+     "I thought it was part of the
+     standard library."
 - color: blue
+  cmap: Blues
   desc: |+
-    >>> import numpy as sp
+    >>> import scipy as sp
+    
+    Fundamental algorithms for
+    scientific computing in Python
 
-    You are not afraid of math
+    "I'm not affraid of math."
 
-  name: scipy
+  name: SciPy
   power: 3
-  short: "Library – common"
+  short: "Library – Common"
 - color: black
+  cmap: copper
   desc: |
     >>> import dask as da
 
-
-    1, 2, or 12,000 cores.
-
-    It the same.
+    Parallelism for analytics,
+    performance at scale.
+    
+    "Oh, when you said 48, I though
+    you meant Racks, not Cores"
 
   name: Dask
   power: 5
-  short: "Library – rare"
+  short: "Library – Rare"
 - color: red
+  cmap: Reds
   desc: |
     >>> import matplotlib.pyplot as plt
 
-
-    Show me the data !
+    Library for creating static, animated,
+    and interactive visualizations.
+    It makes easy things easy and hard
+    things possible.
+    
+    "I've never seen the data speak for
+    itself that clearly"
 
   name: Matplotlib
   power: 4
-  short: "Library \u2013 common"
+  short: "Library – Common"
 - color: green
+  cmap: Greens
   desc: |+
     >>> import skimage
 
-
-    It's also prononced scikit
+    scikit-image is a collection of
+    algorithms for image processing.
+    
+    "You can just call it scikit for
+    short, everybody will understand" 
 
   name: Scikit-Image
   power: 5
-  short: "Library \u2013 rare"
+  short: "Library – Rare"
 - color: yellow
   desc: |+
-    >>> import pandas as pd
-
-
-    don't tell me it's like Excel
+    Fast, powerful, flexible and easy
+    to use data analysis and manipulation
+    tool.
+    
+    "stockholm syndrome is real, I got
+    confused as to why le local zoo was
+    advertising for a new release"
 
   name: Pandas
   power: 1
-  short: "Library \u2013 rare"
+  short: "Library – Rare"
+  cmap: bone
 - color: black
+  cmap: Oranges
   name: astropy
   power: 3
-  short: 'Library – rare'
+  short: 'Library – Rare'
   desc: |+
     >>> import astropy
 
-    we'll be counting stars
+    "Common core package for Astronomy
+    to foster an ecosystem of
+    interoperable astronomy packages."
+    
+    "I got confused when you told me it
+    only has 3249 stars on GitHub"
     
 - color: blue
+  cmap: Purples
   name: bokeh
-  short: 'library - rare'
+  short: 'library - Rare'
   power: 5
   desc: |+
     >>> import bokeh.plotting as bp
     
-    Did you see what I did here ?
+    Create interactive visualizations
+    for modern web browsers. It helps
+    you build beautiful graphics, ranging
+    from simple plots to complex
+    dashboards with streaming datasets.
+
     
 - color: green
+  cmap: Greens
   name: conda
-  short: "package-manager – common"
+  short: "Package Manager – Common"
   power: 5
   desc: |+
     $ conda create -n 3.10 python=3.10
     
-    What do you need ? I got it.
+    Package, dependency and environment
+    management for any language. 
+    
+    "really you can even install npm,
+    fpm... Like turtles it's package
+    managers all the way down"
     
 - color: black
   name: conda-forge
-  short: "repository - common"
+  cmap: bone
+  short: "Repository - Common"
   power: 5
   desc: |+
-    I just wanted to let you know that I
-    linted all conda-recipes in your PR
-    (recipe) and found it was in an
-    excellent condition.
+    "I just wanted to let you know that
+    I linted all conda-recipes in your
+    PR (recipe) and found it was in an
+    excellent condition."
 - color: green
   name: CuPy
-  short: 'library - rare'
+  cmap: Greens
+  short: 'Library - Legendary'
   power: 3
   desc: |+
     >>> import cupy as cp
     
-    NumPy. On GPU. Fast.
+    NumPy/SciPy-compatible Array Library
+    for GPU-accelerated Computing with
+    Python
+    
+    "I though my code was broken,
+    in reallity it was just that fast."
+    
 - color: yellow
   name: Cython
-  short: 'language - rare'
+  cmap: Wistia
+  short: 'Language - Rare'
   power: 5
   desc: |+
-    >>> cimport numpy as cp
+    An optimising static compiler. It
+    makes writing C extensions as easy
+    as Python itself.
     
-    As easy to write as Python. As fast as C.
+    "I've only looked at you python code;
+    there are just a couple typos here, 
+    where you've written 'cdef'"
     
 - color: blue
   name: NetworkX
-  short: "library - rare"
+  cmap: Oranges
+  short: "Library - Rare"
   power: 4
   desc: |+
     >>> import networkx as nx
     
-    No, not that kind of network.
+    NetworkX is a package for the
+    creation, manipulation, and study
+    of the structure, dynamics, and 
+    functions of complex networks.
+    
+    "I'm going to do some networking in
+    the hallway track"
     
 - color: yellow
   name: sunpy
-  short: "library = rare"
+  cmap: Wistia
+  short: "Library - Rare"
   power: 3
   desc: |+
-    >>> import sunpy
     
-    Hopefully there is not one library
-    for each star in the sky. But this one
-    is kind of special.
+    The community-developed, free and
+    open-source solar data analysis
+    environment.
+    
+    "I got even more confused when you 
+    told me it has only 688 stars."
+    
+- color: blue
+  cmap: Blues
+  note: maybe viridis ?
+  name: numba
+  short: "Library – Rare"
+  power: 2
+  desc: |+    
+    JIT compiler that translates a subset
+    of Python and NumPy code into fast
+    machine code.
+    
+    "I was not sure why beautiful code
+    would be faster. I guess I
+    misunderstood what decorated meant"
+    
+- color: red
+  name: spyder
+  cmap: Reds
+  short: "IDE - Legendary"
+  power: 4
+  desc: |+
+    Scientific
+    PYthon
+    Developement
+    EnviRonment.
+    
+    "I originally though it was made
+    for web developers".
+    
+- color: green
+  name: SymPy
+  cmap: Greens
+  short: "Library - Common"
+  power: 3
+  desc: |+
+    Library for symbolic mathematics.
+    It aims to become a full-featured
+    computer algebra system (CAS).
+    
+    "As a real world example, let's
+    consider the Weierstrass function
+    that is continuous everywhere but
+    differentiable nowhere."
+- color: white
+  name: IPython
+  cmap: Greys
+  short: "CLI – Rare"
+  power: 5
+  desc: |+
+    IPython provides a rich architecture
+    for interactive computing with a
+    powerful interactive shell a kernel
+    for Jupyter.
+    
+    "In IPython we have weaponized your
+    tab key."
+                        -- Fernando Pérez
+- color: red
+  name: FEniCS
+  cmap: Reds
+  short: "Library - Rare"
+  power: 3
+  desc: |+
+    Quickly translate scientific models
+    into efficient finite element code
+    
+    "I'm sad the codebase does not
+    contain 'raise from hashes'"
+- color: white
+  name: Jupyter
+  cmap: Oranges
+  short: "IDE - Common"
+  power: 4
+  desc: |+
+    Web services for interactive
+    computing across all programming
+    languages.
+    
+    "Are those folks in the business
+    of weird spelling and case
+    sensitivity?"
+- color: black
+  cmap: Oranges
+  name: "scikit-learn"
+  short: "Library - Common"
+  power: 3
+  desc: |+
+    Simple and efficient tools for
+    predictive data analysis.
+    
+    "there are so many resources on
+    how to learn about scikit !"
     
