@@ -1,3 +1,8 @@
+- name: OpenTeams
+  desc: |+
+    The Best Network of
+    Open Source Talent
+    
 - name: SciPy 2022
   color: blue
   cmap: bone
@@ -108,7 +113,7 @@
   short: "Library – Rare"
 - color: red
   meth: tri
-  cmap: Reds
+  cmap: winter
   desc: |
     >>> import matplotlib.pyplot as plt
 
@@ -166,17 +171,17 @@
   desc: |+
     >>> import astropy
 
-    "Common core package for Astronomy
+    Common core package for Astronomy
     to foster an ecosystem of
-    interoperable astronomy packages."
+    interoperable astronomy packages.
     
     "I got confused when you told me it
     only has 3249 stars on GitHub"
     
 - color: blue
-  cmap: Purples
+  cmap: magma
   name: bokeh
-  meth: hex
+  meth: noise
   short: 'library - Rare'
   power: 5
   desc: |+
@@ -288,7 +293,7 @@
 - color: blue
   cmap: Blues
   note: maybe viridis ?
-  meth: sca
+  meth: noise
   name: numba
   maint: esc
   short: "Library – Rare"
@@ -337,7 +342,7 @@
 - color: white
   name: IPython
   maint: Carreau
-  cmap: Greys
+  cmap: plasma
   meth: tri
   short: "CLI – Rare"
   power: 5

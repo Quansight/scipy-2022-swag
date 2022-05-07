@@ -1,0 +1,96 @@
+- name: Sky is the limit
+  cmap: Wistia
+  shape: tri
+  items:
+    - astropy
+    - sunpy
+    - bsipocz
+- name: Packaging
+  cmap: Greens
+  shape: noise
+  items:
+    - conda-forge
+    - conda
+    - goanpeca
+- name: Performance
+  cmap: Reds
+  shape: sca
+  items:
+    - Dask
+    - cython
+    - numba
+    - cupy
+#    - mattip
+- name: Vizualisation
+  cmap: winter
+  shape: hex
+  items:
+    - matplotlib
+    - bokeh
+    - Scikit-Image
+#    - tacaswell
+#    - stefanv
+- name: Support
+  cmap: viridis
+  shape: tri
+  items:
+    - Numfocus
+    - Scipy 2022
+#    - lsilen
+    - OpenTeams
+- name: IDE
+  shape: tri
+  cmap: Oranges
+  items:
+    - IPython
+    - Jupyter
+    - Spyder
+#    - ccordoba12
+- name: Mathematics
+  cmap: Purples
+  shape: noise
+  items:
+    - sympy
+    - scipy
+#    - asmeurer
+#    - rgommers
+- name: Building blocks
+  shape: tri
+  cmap: Blues
+  items:
+    - numpy 
+    - zarr
+    - xarray
+#    - melissawm
+    - NetworkX
+#    - jarrodmillman
+- name: Women of Exception
+  shape: tri
+  cmap: plasma
+  items:
+    - isabela-pf
+    - noatamir
+    - melissawm
+    - trallard
+    - willingc
+    - lsilen
+- name: Misc
+  shape: sca
+  cmap: terrain
+  items:
+    - Scikit-Learn
+    - Pandas
+#    - trallard
+    - Carreau
+#    - willingc
+    - thomasjpfan
+#    - isabela-pf
+    - costrouc
+    - grlee77
+#    - noatamir
+    - tonyfast
+    - vfdev-5
+  
+
+
+    
