@@ -4,16 +4,16 @@
   items:
     - astropy
     - sunpy
-    - bsipocz
+    - skypy
 - name: Packaging
   cmap: Greens
   shape: noise
   items:
     - conda-forge
     - conda
-    - goanpeca
+#    - goanpeca
 - name: Performance
-  cmap: Reds
+  cmap: twilight
   shape: sca
   items:
     - Dask
@@ -52,6 +52,7 @@
   items:
     - sympy
     - scipy
+    - mathjax
 #    - asmeurer
 #    - rgommers
 - name: Building blocks
@@ -64,32 +65,42 @@
 #    - melissawm
     - NetworkX
 #    - jarrodmillman
-- name: Women of Exception
+# - name: Women of Exception
+#   shape: tri
+#   cmap: plasma
+#   items:
+#     - isabela-pf
+#     - noatamir
+#     - melissawm
+#     - trallard
+#     - willingc
+#     - lsilen
+- name: Machine Learning
   shape: tri
-  cmap: plasma
-  items:
-    - isabela-pf
-    - noatamir
-    - melissawm
-    - trallard
-    - willingc
-    - lsilen
-- name: Misc
-  shape: sca
-  cmap: terrain
+  cmap: gist_heat
   items:
     - Scikit-Learn
+    - PyTorch Ignite
+- name: Dataframes
+  items:
     - Pandas
-#    - trallard
-    - Carreau
-#    - willingc
-    - thomasjpfan
-#    - isabela-pf
-    - costrouc
-    - grlee77
-#    - noatamir
-    - tonyfast
-    - vfdev-5
+    - GeoPandas
+  shape: tri
+  cmap: BrBG
+# - name: Misc
+#   shape: sca
+#   cmap: terrain
+#   items:
+# #    - trallard
+#     - Carreau
+# #    - willingc
+#     - thomasjpfan
+# #    - isabela-pf
+#     - costrouc
+#     - grlee77
+# #    - noatamir
+#     - tonyfast
+#     - vfdev-5
   
 
 

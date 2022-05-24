@@ -2,6 +2,26 @@
   desc: |+
     The Best Network of
     Open Source Talent
+- name: MathJax
+  desc: |+
+    A JavaScript display engine for
+    mathematics that works in all
+    browsers. 
+    
+    It just works.
+    
+    "It's like in The matrix. You
+    get so use to it, you don't even 
+    see the LaTeX code anymore."
+- name: GeoPandas
+  desc: |+
+    An open source project to make
+    working with geospatial data in
+    python easier.
+    
+    "I'm pretty convinced dataframes
+    are actually spherical; and values
+    attracted toward the center of it."
     
 - name: SciPy 2022
   color: blue
@@ -34,7 +54,7 @@
     scene at NumFOCUS.
     
     https://numfocus.org/donate
-- name: xarray
+- name: Xarray
   maint: max-sixty
   cmap: copper
   meth: sca
@@ -145,6 +165,15 @@
 
   power: 5
   short: "Library – Rare"
+- name: PyTorch Ignite
+  desc: |+
+    High-level library to help with
+    training and evaluating neural
+    networks in PyTorch flexibly and
+    transparently.
+    
+    "The spark that made my heart burn
+    for machine learning"
 - color: yellow
   desc: |+
     Fast, powerful, flexible and easy
@@ -152,7 +181,7 @@
     tool.
     
     "stockholm syndrome is real, I got
-    confused as to why le local zoo was
+    confused as to why the local zoo was
     advertising for a new release"
 
   name: Pandas
@@ -161,9 +190,19 @@
   short: "Library – Rare"
   cmap: bone
   meth: sca
+- name: SkyPy
+  short: Library
+  desc:  |+
+    Package for simulating the
+    astrophysical sky. It
+    comprises a library of physical
+    and empirical models across a
+    range of observables and a command
+    line script to run end-to-end
+    simulations.
 - color: black
   cmap: Purples
-  name: astropy
+  name: Astropy
   maint: embray
   meth: tri
   power: 3
@@ -180,7 +219,7 @@
     
 - color: blue
   cmap: magma
-  name: bokeh
+  name: Bokeh
   meth: noise
   short: 'library - Rare'
   power: 5
@@ -196,7 +235,7 @@
     
 - color: green
   cmap: Greens
-  name: conda
+  name: Conda
   maint: jaimergp
   meth: tri
   short: "Package Manager – Common"
@@ -212,7 +251,7 @@
     managers all the way down"
     
 - color: black
-  name: conda-forge
+  name: Conda-Forge
   maint: ocefpaf
   cmap: bone
   meth: hex
@@ -275,7 +314,7 @@
     the hallway track"
     
 - color: yellow
-  name: sunpy
+  name: SunPy
   maint: bsipocz
   cmap: Wistia
   meth: tri
@@ -294,7 +333,7 @@
   cmap: Blues
   note: maybe viridis ?
   meth: noise
-  name: numba
+  name: Numba
   maint: esc
   short: "Library – Rare"
   power: 2
@@ -308,7 +347,7 @@
     misunderstood what decorated meant"
     
 - color: red
-  name: spyder
+  name: Spyder
   maint: ccordoba12
   meth: sca
   cmap: Reds
@@ -386,7 +425,7 @@
 - color: black
   cmap: Oranges
   maint: thomasjpfan
-  name: "scikit-learn"
+  name: "Scikit-Learn"
   meth: hex
   short: "Library - Common"
   power: 3
