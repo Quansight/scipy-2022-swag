@@ -7,7 +7,6 @@
     A JavaScript display engine for
     mathematics that works in all
     browsers. 
-    
     It just works.
     
     "It's like in The matrix. You
@@ -24,8 +23,6 @@
     attracted toward the center of it."
     
 - name: SciPy 2022
-  color: blue
-  cmap: bone
   meth: tri
   short: "Conference – Epic"
   power: 5
@@ -39,10 +36,7 @@
     
     Thanks to all organisers.
 - name: NumFOCUS
-  maint: lsilen
-  color: white
   meth: tri
-  cmap: viridis
   power: 5
   short: 501(c)3 – Legendary
   desc: |+
@@ -55,10 +49,7 @@
     
     https://numfocus.org/donate
 - name: Xarray
-  maint: max-sixty
-  cmap: copper
   meth: sca
-  color: green
   power: 3
   short: "Library - Common"
   desc: |+
@@ -70,10 +61,7 @@
     dimensions I call them
     by their first names"
 - name: Zarr
-  maint: grlee77
   meth: hex
-  cmap: plasma
-  color: blue
   power: 2
   short: "Library & Fileformat - Rare"
   desc: |+
@@ -83,10 +71,7 @@
     Also works with small datasets, 
     of less than 128 Tb.
 - name: NumPy 
-  maint: InessaPawson
   meth: tri
-  cmap: Blues
-  color: white
   power: 2
   short: 'Library – Rare'
   desc: |+
@@ -97,11 +82,7 @@
         
      "I thought it was part of the
      standard library."
-- color: blue
-  
-  maint: melissawm
-  cmap: Blues
-  name: SciPy
+- name: SciPy
   meth: hex
   desc: |+
     >>> import scipy as sp
@@ -114,11 +95,8 @@
 
   power: 3
   short: "Library – Common"
-- color: black
-  name: Dask
-  maint: chdoig
+- name: Dask
   meth: tri
-  cmap: copper
   desc: |
     >>> import dask as da
 
@@ -131,9 +109,7 @@
 
   power: 5
   short: "Library – Rare"
-- color: red
-  meth: tri
-  cmap: winter
+- meth: tri
   desc: |
     >>> import matplotlib.pyplot as plt
 
@@ -146,14 +122,10 @@
     itself that clearly"
 
   name: Matplotlib
-  maint: tacaswell
   power: 4
   short: "Library – Common"
-- color: green
-  name: Scikit-Image
-  maint: stefanv
+- name: Scikit-Image
   meth: hex
-  cmap: copper
   desc: |+
     >>> import skimage
 
@@ -174,8 +146,7 @@
     
     "The spark that made my heart burn
     for machine learning"
-- color: yellow
-  desc: |+
+- desc: |+
     Fast, powerful, flexible and easy
     to use data analysis and manipulation
     tool.
@@ -185,10 +156,8 @@
     advertising for a new release"
 
   name: Pandas
-  maint: mroeschke
   power: 1
   short: "Library – Rare"
-  cmap: bone
   meth: sca
 - name: SkyPy
   short: Library
@@ -200,10 +169,7 @@
     range of observables and a command
     line script to run end-to-end
     simulations.
-- color: black
-  cmap: Purples
-  name: Astropy
-  maint: embray
+- name: Astropy
   meth: tri
   power: 3
   short: 'Library – Rare'
@@ -217,9 +183,7 @@
     "I got confused when you told me it
     only has 3249 stars on GitHub"
     
-- color: blue
-  cmap: magma
-  name: Bokeh
+- name: Bokeh
   meth: noise
   short: 'library - Rare'
   power: 5
@@ -233,10 +197,7 @@
     dashboards with streaming datasets.
 
     
-- color: green
-  cmap: Greens
-  name: Conda
-  maint: jaimergp
+- name: Conda
   meth: tri
   short: "Package Manager – Common"
   power: 5
@@ -250,10 +211,7 @@
     fpm... Like turtles it's package
     managers all the way down"
     
-- color: black
-  name: Conda-Forge
-  maint: ocefpaf
-  cmap: bone
+- name: Conda-Forge
   meth: hex
   short: "Repository - Common"
   power: 5
@@ -262,10 +220,7 @@
     I linted all conda-recipes in your
     PR (recipe) and found it was in an
     excellent condition."
-- color: green
-  name: CuPy
-  maint: kmaehashi
-  cmap: Greens
+- name: CuPy
   meth: hex
   short: 'Library - Legendary'
   power: 3
@@ -279,10 +234,7 @@
     "I though my code was broken,
     in reallity it was just that fast."
     
-- color: yellow
-  name: Cython
-  maint: scoder
-  cmap: Wistia
+- name: Cython
   meth: hex
   short: 'Language - Rare'
   power: 5
@@ -295,11 +247,8 @@
     there are just a couple typos here, 
     where you've written 'cdef'"
     
-- color: blue
-  name: NetworkX
-  maint: jarrodmillman
+- name: NetworkX
   meth: tri
-  cmap: Oranges
   short: "Library - Rare"
   power: 4
   desc: |+
@@ -313,10 +262,7 @@
     "I'm going to do some networking in
     the hallway track"
     
-- color: yellow
-  name: SunPy
-  maint: bsipocz
-  cmap: Wistia
+- name: SunPy
   meth: tri
   short: "Library - Rare"
   power: 3
@@ -329,12 +275,9 @@
     "I got even more confused when you 
     told me it has only 688 stars."
     
-- color: blue
-  cmap: Blues
-  note: maybe viridis ?
+- note: maybe viridis ?
   meth: noise
   name: Numba
-  maint: esc
   short: "Library – Rare"
   power: 2
   desc: |+    
@@ -346,11 +289,8 @@
     would be faster. I guess I
     misunderstood what decorated meant"
     
-- color: red
-  name: Spyder
-  maint: ccordoba12
+- name: Spyder
   meth: sca
-  cmap: Reds
   short: "IDE - Legendary"
   power: 4
   desc: |+
@@ -362,11 +302,8 @@
     "I originally though it was made
     for web developers".
     
-- color: green
-  name: SymPy
-  maint: asmeurer
+- name: SymPy
   meth: sca
-  cmap: Greens
   short: "Library - Common"
   power: 3
   desc: |+
@@ -378,10 +315,7 @@
     consider the Weierstrass function
     that is continuous everywhere but
     differentiable nowhere."
-- color: white
-  name: IPython
-  maint: Carreau
-  cmap: plasma
+- name: IPython
   meth: tri
   short: "CLI – Rare"
   power: 5
@@ -394,10 +328,7 @@
     "In IPython we have weaponized your
     tab key."
                         -- Fernando Pérez
-- color: red
-  name: FEniCS
-  maint: mscroggs
-  cmap: Reds
+- name: FEniCS
   meth: hex
   short: "Library - Rare"
   power: 3
@@ -407,11 +338,8 @@
     
     "I'm sad the codebase does not
     contain 'raise from hashes'"
-- color: white
-  name: Jupyter
-  maint: willingc
+- name: Jupyter
   meth: sca
-  cmap: Oranges
   short: "IDE - Common"
   power: 4
   desc: |+
@@ -422,10 +350,7 @@
     "Are those folks in the business
     of weird spelling and case
     sensitivity?"
-- color: black
-  cmap: Oranges
-  maint: thomasjpfan
-  name: "Scikit-Learn"
+- name: "Scikit-Learn"
   meth: hex
   short: "Library - Common"
   power: 3

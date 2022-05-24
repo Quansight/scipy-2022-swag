@@ -14,7 +14,7 @@
 #    - goanpeca
 - name: Performance
   cmap: twilight
-  shape: sca
+  shape: scatter
   items:
     - Dask
     - cython
@@ -87,21 +87,3 @@
     - GeoPandas
   shape: tri
   cmap: BrBG
-# - name: Misc
-#   shape: sca
-#   cmap: terrain
-#   items:
-# #    - trallard
-#     - Carreau
-# #    - willingc
-#     - thomasjpfan
-# #    - isabela-pf
-#     - costrouc
-#     - grlee77
-# #    - noatamir
-#     - tonyfast
-#     - vfdev-5
-  
-
-
-    

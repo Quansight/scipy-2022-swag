@@ -139,7 +139,7 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
         )
     elif meth == "tri":
         triback(ax, cmap)
-    elif meth == "sca":
+    elif meth == "scatter":
         scaback(ax, cmap)
     elif meth == "noise":
         noise(ax, cmap)
