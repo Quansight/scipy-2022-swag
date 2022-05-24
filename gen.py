@@ -1,16 +1,16 @@
-from functools import lru_cache
-import yaml
-from ipywidgets import interact
+from matplotlib import font_manager
+from itertools import product
+from matplotlib.cm import get_cmap
+from matplotlib.collections import PatchCollection
+import matplotlib.patheffects as PathEffects
+from matplotlib.patches import Circle, Polygon
+from scipy.stats import multivariate_normal
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
-import poisson_disc as pd
-import matplotlib.pyplot as plt
 import matplotlib.tri as tri
-from matplotlib.cm import get_cmap
-from scipy.stats import multivariate_normal
-from matplotlib import font_manager
 import numpy as np
-
+import poisson_disc as pd
+import yaml
 
 with open("data.yml") as fi:
     data = yaml.safe_load(fi.read())
@@ -58,11 +58,11 @@ for _ in range(int(23 * S)):
 
 
 #### background 2
+znoise = np.zeros_like(nx)
+for k, rv in nrvs:
+    znoise = znoise + k * rv.pdf(npos)
 def noise(ax, cmap):
-    z = np.zeros_like(nx)
-    for k, rv in nrvs:
-        z = z + k * rv.pdf(npos)
-    ax.contourf(nx, ny, z, 15, cmap=cmap, ec="k", lw=3)
+    ax.contourf(nx, ny, znoise, 15, cmap=cmap)
     # ax.contour(nx, ny, z, 7, colors='k', linestyles='solid')
 
 
@@ -87,33 +87,29 @@ kx, ky = 2 * 3, 4 * 2
 tripoints = pd.Bridson_sampling(np.array([kx, ky]), k=10, radius=0.2)
 tric1 = np.random.rand(tripoints.shape[0], 1)
 
+points = tripoints
+c1 = tric1
+points = np.hstack([points, c1])
+
+
+k = []
+for dx, dy in product([-kx, 0, kx], [-ky, 0, ky]):
+    k.append(points + np.array([dx, dy, 0]))
+
+p2 = np.vstack(k)
+
+x, y, c2 = p2.T
+c2 = (c2 - c2.min()) / (c2.max() - c2.min())
+TRI = tri.Triangulation(x, y)
 
 def triback(ax, cmap):
-    points = tripoints
-    c1 = tric1
-    points = np.hstack([points, c1])
-
-    from itertools import product
-
-    k = []
-    for dx, dy in product([-kx, 0, kx], [-ky, 0, ky]):
-        k.append(points + np.array([dx, dy, 0]))
-
-    p2 = np.vstack(k)
-
-    x, y, c2 = p2.T
-    t = tri.Triangulation(x, y)
-    c2 = (c2 - c2.min()) / (c2.max() - c2.min())
     ax.tripcolor(
-        t, c2, shading="flat", cmap=cmap, edgecolors="#000", vmin=-0.05, vmax=1.05
+        TRI, c2, shading="flat", cmap=cmap, edgecolors="#000", vmin=-0.05, vmax=1.05
     )
 
 
 ####
 
-import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.cm import get_cmap
 
 # plt.style.use('_mpl-gallery-nogrid')
 
@@ -127,13 +123,8 @@ y = y * 10 - 5
 # plot:
 
 
-from matplotlib.patches import Circle, Wedge, Polygon
-from matplotlib.collections import PatchCollection
-import matplotlib.image as mpimg
-from matplotlib.colors import Normalize
 
-
-def plot_one(ax, cmap, name, short, desc, meth, maint, group=None, gn="0/0", tn="0/0"):
+def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
     if meth == "hex":
         ax.hexbin(
             x,
@@ -167,9 +158,8 @@ def plot_one(ax, cmap, name, short, desc, meth, maint, group=None, gn="0/0", tn=
         Polygon(rect(3, 2.1, 2.6)),  # title
         Polygon(rect(0.2, 1.9, -0.2)),  # short
         Polygon(rect(-0.4, 2.1, -2.4)),  # desc
+        Polygon(rect(2.4, 2.0, 0.4)),  # whiteish bg
     ]
-    if not maint:
-        patches.append(Polygon(rect(2.4, 2.0, 0.4)))
 
     axins = ax.inset_axes([-1.7, 0.4, 1.7 * 2, 2.0], transform=ax.transData)
     logo = mpimg.imread(f"logos/{name.lower()}.png")
@@ -180,37 +170,18 @@ def plot_one(ax, cmap, name, short, desc, meth, maint, group=None, gn="0/0", tn=
         im = axins.imshow(
             logo,
         )
-    if maint:
-        cx, cy = logo.shape[:2]
-        clip = Circle((cx // 2, cy // 2), radius=cx // 2, transform=axins.transData)
-        im.set_clip_path(clip)
-        axins.add_patch(
-            Circle(
-                (cx // 2, cy // 2),
-                radius=cx // 2,
-                transform=axins.transData,
-                fc="#ffffff00",
-                ec=get_cmap(cmap)(1),
-                lw=3,
-            )
-        )
-        # patches.append(Circle((0,1.3),radius=0.77))
 
     axins.patch.set_alpha(0.0)
     axins.axis("off")
-    # colors = [1]*len(patches)
     cc = get_cmap(cmap)(0.5)
     p = PatchCollection(patches, alpha=0.90, ec=cc, fc="white", lw=3)
-    # p.set_array(colors)
     ax.add_collection(p)
-    # Menlo
-    # raleway
     footer = "Trade this card with other attendees. Find a pair.\nCome get more at NumFOCUS or QuanSight Booth"
 
     ax.text(
         0,
         2.7,
-        short if maint else name,
+        name,
         ha="center",
         fontsize=40,
         fontfamily="Raleway",
@@ -221,7 +192,7 @@ def plot_one(ax, cmap, name, short, desc, meth, maint, group=None, gn="0/0", tn=
     ax.text(
         -1.8,
         -0.1,
-        group if maint else short,
+        short,
         fontsize=35,
         fontfamily="Raleway",
         fontweight="light",
@@ -249,20 +220,17 @@ def plot_one(ax, cmap, name, short, desc, meth, maint, group=None, gn="0/0", tn=
     )
 
     fcolor = "white" if cmap in {"gray", "twilight", "gist_heat"} else "black"
-    import matplotlib.patheffects as PathEffects
 
     txt = ax.text(
         -2.1, -2.9, footer + " " + tn, fontsize=20, fontfamily="Raleway", color=fcolor
     )
 
-    # txt2 = ax.text(+2.0, -2.2, tn, ha='right', fontsize=20, fontfamily='Raleway', color=fcolor)
 
     for t in [txt]:
         t.set_path_effects(
             [PathEffects.withStroke(linewidth=5, foreground=get_cmap(cmap)(0.5))]
         )
 
-    # plt.show()
 
 
 total = len([x for g in groups for x in g["items"]])
@@ -277,7 +245,6 @@ for g in groups[:]:
         DPI = 150
 
         if len(matching) == 1:
-            print(it, "- lib", k, i)
             dx = matching[0]
             plot_one(
                 ax,
@@ -286,13 +253,11 @@ for g in groups[:]:
                 name=dx["name"],
                 short=g["name"],
                 desc=dx["desc"],
-                maint=False,
                 gn=f'{i}/{len(g["items"])}',
                 tn=f"{k}/{total}",
             )
         else:
-            continue
-            pm(ax, it, g["cmap"], g["shape"], group=g["name"])
+            raise ValueError("matching")
         name = f"cards-groups/{g['name']}-{i}-{it}-card.png"
         print(name)
         fig.savefig(
