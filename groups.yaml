@@ -11,7 +11,6 @@
   items:
     - conda-forge
     - conda
-#    - goanpeca
 - name: Performance
   cmap: twilight
   shape: scatter
@@ -20,7 +19,6 @@
     - cython
     - numba
     - cupy
-#    - mattip
 - name: Vizualisation
   cmap: winter
   shape: hex
@@ -28,15 +26,14 @@
     - matplotlib
     - bokeh
     - Scikit-Image
-#    - tacaswell
-#    - stefanv
+    - napari
+    - holoviz
 - name: Support
   cmap: viridis
   shape: tri
   items:
     - Numfocus
     - Scipy 2022
-#    - lsilen
     - OpenTeams
 - name: IDE
   shape: tri
@@ -45,7 +42,6 @@
     - IPython
     - Jupyter
     - Spyder
-#    - ccordoba12
 - name: Mathematics
   cmap: Purples
   shape: noise
@@ -53,8 +49,6 @@
     - sympy
     - scipy
     - mathjax
-#    - asmeurer
-#    - rgommers
 - name: Building blocks
   shape: tri
   cmap: Blues
@@ -62,19 +56,7 @@
     - numpy 
     - zarr
     - xarray
-#    - melissawm
     - NetworkX
-#    - jarrodmillman
-# - name: Women of Exception
-#   shape: tri
-#   cmap: plasma
-#   items:
-#     - isabela-pf
-#     - noatamir
-#     - melissawm
-#     - trallard
-#     - willingc
-#     - lsilen
 - name: Machine Learning
   shape: tri
   cmap: gist_heat

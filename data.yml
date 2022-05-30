@@ -1,3 +1,15 @@
+- name: Holoviz
+  desc: 
+    High-level tools to simplify
+    visualization in Python
+
+    "Visualisations that jumps out
+    of your screen."
+- name: Napari
+  desc: |+
+    Multi-dimensional image
+    viewer for python
+
 - name: OpenTeams
   desc: |+
     The Best Network of
@@ -10,7 +22,7 @@
     It just works.
     
     "It's like in The matrix. You
-    get so use to it, you don't even 
+    get so uses to it, you don't even 
     see the LaTeX code anymore."
 - name: GeoPandas
   desc: |+
