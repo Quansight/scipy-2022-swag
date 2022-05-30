@@ -1,5 +1,5 @@
 - name: Holoviz
-  desc: 
+  desc: |+
     High-level tools to simplify
     visualization in Python
 
