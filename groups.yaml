@@ -1,0 +1,71 @@
+- name: Sky is the limit
+  cmap: Wistia
+  shape: tri
+  items:
+    - astropy
+    - sunpy
+    - skypy
+- name: Packaging
+  cmap: Greens
+  shape: noise
+  items:
+    - conda-forge
+    - conda
+- name: Performance
+  cmap: twilight
+  shape: scatter
+  items:
+    - Dask
+    - cython
+    - numba
+    - cupy
+- name: Vizualisation
+  cmap: winter
+  shape: hex
+  items:
+    - matplotlib
+    - bokeh
+    - Scikit-Image
+    - napari
+    - holoviz
+- name: Support
+  cmap: viridis
+  shape: tri
+  items:
+    - Numfocus
+    - Scipy 2022
+    - OpenTeams
+- name: IDE
+  shape: tri
+  cmap: Oranges
+  items:
+    - IPython
+    - Jupyter
+    - Spyder
+- name: Mathematics
+  cmap: Purples
+  shape: noise
+  items:
+    - sympy
+    - scipy
+    - mathjax
+- name: Building blocks
+  shape: tri
+  cmap: Blues
+  items:
+    - numpy 
+    - zarr
+    - xarray
+    - NetworkX
+- name: Machine Learning
+  shape: tri
+  cmap: gist_heat
+  items:
+    - Scikit-Learn
+    - PyTorch Ignite
+- name: Dataframes
+  items:
+    - Pandas
+    - GeoPandas
+  shape: tri
+  cmap: BrBG
