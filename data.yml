@@ -14,7 +14,8 @@
   desc: |+
     A Network of Enterprise Solution 
     Architects using open Source talent 
-    to build and maintain your software solutions.
+    to build and maintain your software
+    solutions.
 - name: MathJax
   desc: |+
     A JavaScript display engine for
@@ -335,8 +336,8 @@
   desc: |+
     IPython provides a rich architecture
     for interactive computing with a
-    powerful interactive shell and a kernel
-    for Jupyter.
+    powerful interactive shell and
+    a kernel for Jupyter.
     
     "In IPython we have weaponized your
     tab key."
