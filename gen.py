@@ -156,9 +156,9 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
 
     patches = [
         Polygon(rect(3, 2.1, 2.6)),  # title
-        Polygon(rect(0.2, 1.9, -0.2)),  # short
+        Polygon(rect(0.2, 2.1, -0.2)),  # short
         Polygon(rect(-0.4, 2.1, -2.4)),  # desc
-        Polygon(rect(2.4, 2.0, 0.4)),  # whiteish bg
+        Polygon(rect(2.4, 2.1, 0.4)),  # whiteish bg
     ]
 
     axins = ax.inset_axes([-1.7, 0.4, 1.7 * 2, 2.0], transform=ax.transData)
@@ -174,7 +174,7 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
     axins.patch.set_alpha(0.0)
     axins.axis("off")
     cc = get_cmap(cmap)(0.5)
-    p = PatchCollection(patches, alpha=0.90, ec=cc, fc="white", lw=3)
+    p = PatchCollection(patches, alpha=0.90, ec=cc, fc="white", lw=0)
     ax.add_collection(p)
     footer = "Trade this card with other attendees. Find a pair.\nCome get more at NumFOCUS or QuanSight Booth"
 
@@ -185,29 +185,29 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
         ha="center",
         fontsize=40,
         fontfamily="Raleway",
-        fontweight="light",
+        fontweight="bold",
         transform=ax.transData,
     )
 
     ax.text(
-        -1.8,
+        -2.0,
         -0.1,
-        short,
-        fontsize=35,
-        fontfamily="Raleway",
+        short + " " + gn,
+        fontsize=30,
+        fontfamily="Menlo",
         fontweight="light",
         transform=ax.transData,
     )
-    ax.text(
-        +1.8,
-        -0.1,
-        gn,
-        ha="right",
-        fontsize=35,
-        fontfamily="Raleway",
-        fontweight="light",
-        transform=ax.transData,
-    )
+    # ax.text(
+    #    +2.0,
+    #    -0.1,
+    #    gn,
+    #    ha="right",
+    #    fontsize=35,
+    #    fontfamily="Menlo",
+    #    fontweight="light",
+    #    transform=ax.transData,
+    # )
     ax.text(
         -2.0,
         -0.5,

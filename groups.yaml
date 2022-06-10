@@ -26,8 +26,8 @@
     - matplotlib
     - bokeh
     - Scikit-Image
-    - napari
-    - holoviz
+      #    - napari
+      #    - holoviz
 - name: Support
   cmap: viridis
   shape: tri
