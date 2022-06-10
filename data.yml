@@ -8,7 +8,7 @@
 - name: Napari
   desc: |+
     Multi-dimensional image
-    viewer for python
+    viewer for Python
 
 - name: OpenTeams
   desc: |+
@@ -30,7 +30,7 @@
   desc: |+
     An open source project to make
     working with geospatial data in
-    python easier.
+    Python easier.
     
     "I'm pretty convinced dataframes
     are actually spherical; and values
@@ -58,7 +58,7 @@
     of economic growth."
     
     Nothing  would be possible without
-    all the hands working behing the
+    all the hands working behind the
     scene at NumFOCUS.
     
     https://numfocus.org/donate
@@ -104,7 +104,7 @@
     Fundamental algorithms for
     scientific computing in Python
 
-    "I'm not affraid of math."
+    "I'm not afraid of math."
 
 
   power: 3
@@ -129,7 +129,7 @@
 
     Library for creating static, animated,
     and interactive visualizations.
-    It makes easy things easy and hard
+    It makes easy things easier and hard
     things possible.
     
     "I've never seen the data speak for
@@ -161,11 +161,11 @@
     "The spark that made my heart burn
     for machine learning"
 - desc: |+
-    Fast, powerful, flexible and easy
+    Fast, powerful, flexible, and easy
     to use data analysis and manipulation
     tool.
     
-    "stockholm syndrome is real, I got
+    "Stockholm syndrome is real, I got
     confused as to why the local zoo was
     advertising for a new release"
 
@@ -245,7 +245,7 @@
     for GPU-accelerated Computing with
     Python
     
-    "I though my code was broken,
+    "I thought my code was broken,
     in reality it was just that fast."
     
 - name: Cython
@@ -257,7 +257,7 @@
     makes writing C extensions as easy
     as Python itself.
     
-    "I've only looked at your python code;
+    "I've only looked at your Python code;
     there are just a couple typos here, 
     where you've written 'cdef'"
     
@@ -313,7 +313,7 @@
     Developement
     EnviRonment.
     
-    "I originally though it was made
+    "I originally thought it was made
     for web developers".
     
 - name: SymPy
@@ -372,6 +372,6 @@
     Simple and efficient tools for
     predictive data analysis.
     
-    "there are so many resources on
+    "There are so many resources on
     how to learn about scikit !"
     
