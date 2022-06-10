@@ -3,7 +3,7 @@
     High-level tools to simplify
     visualization in Python
 
-    "Visualisations that jumps out
+    "Visualizations that jump out
     of your screen."
 - name: Napari
   desc: |+
@@ -12,8 +12,9 @@
 
 - name: OpenTeams
   desc: |+
-    The Best Network of
-    Open Source Talent
+    A Network of Enterprise Solution 
+    Architects using open Source talent 
+    to build and maintain your software solutions.
 - name: MathJax
   desc: |+
     A JavaScript display engine for
@@ -22,7 +23,7 @@
     It just works.
     
     "It's like in The matrix. You
-    get so uses to it, you don't even 
+    get so used to it, you don't even 
     see the LaTeX code anymore."
 - name: GeoPandas
   desc: |+
@@ -46,7 +47,7 @@
     Come for the language,
     stay for the community.
     
-    Thanks to all organisers.
+    Thanks to all organizers.
 - name: NumFOCUS
   meth: tri
   power: 5
@@ -66,7 +67,7 @@
   short: "Library - Common"
   desc: |+
     Package that makes working with
-    labelled multi-dimensional arrays
+    labeled multi-dimensional arrays
     simple, efficient, and fun!
     
     "I'm so familiar with higher
@@ -244,18 +245,18 @@
     Python
     
     "I though my code was broken,
-    in reallity it was just that fast."
+    in reality it was just that fast."
     
 - name: Cython
   meth: hex
   short: 'Language - Rare'
   power: 5
   desc: |+
-    An optimising static compiler. It
+    An optimizing static compiler. It
     makes writing C extensions as easy
     as Python itself.
     
-    "I've only looked at you python code;
+    "I've only looked at your python code;
     there are just a couple typos here, 
     where you've written 'cdef'"
     
@@ -334,7 +335,7 @@
   desc: |+
     IPython provides a rich architecture
     for interactive computing with a
-    powerful interactive shell a kernel
+    powerful interactive shell and a kernel
     for Jupyter.
     
     "In IPython we have weaponized your
