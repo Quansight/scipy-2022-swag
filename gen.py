@@ -116,8 +116,8 @@ def triback(ax, cmap):
 # plt.style.use('_mpl-gallery-nogrid')
 
 # make data: correlated + noise
-np.random.seed(1)
-x, y, hc = np.random.rand(3, 1500)
+# np.random.seed(1)
+x, y, hc = np.random.rand(3, 2000)
 x = x * 10 - 5
 y = y * 10 - 5
 
@@ -134,7 +134,7 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
             C=hc,
             gridsize=20,
             cmap=cmap,
-            vmin=-0.1,
+            vmin=-0.0,
             vmax=1,
             edgecolors="k",
             lw=0.5,
