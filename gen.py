@@ -176,6 +176,10 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
     cc = get_cmap(cmap)(0.5)
     p = PatchCollection(patches, alpha=0.90, ec=cc, fc="white", lw=0)
     ax.add_collection(p)
+
+    crect = Polygon(rect(-2.55, 2.1, -3.00))  # whiteish bg
+    p2 = PatchCollection([crect], alpha=0.90, ec=cc, fc=get_cmap(cmap)(0.5), lw=0)
+    ax.add_collection(p2)
     footer = "Trade this card with other attendees. Find a pair.\nCome get more at NumFOCUS or QuanSight Booth"
 
     ax.text(
@@ -222,14 +226,13 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
     fcolor = "white" if cmap in {"gray", "twilight", "gist_heat"} else "black"
 
     txt = ax.text(
-        -2.1, -2.9, footer + " " + tn, fontsize=20, fontfamily="Raleway", color=fcolor
+        -2.0, -2.9, footer + "   " + tn, fontsize=18, fontfamily="Raleway", color=fcolor
     )
 
-
-    for t in [txt]:
-        t.set_path_effects(
-            [PathEffects.withStroke(linewidth=5, foreground=get_cmap(cmap)(0.5))]
-        )
+    # for t in [txt]:
+    #    t.set_path_effects(
+    #        [PathEffects.withStroke(linewidth=5, foreground=get_cmap(cmap)(0.5))]
+    #    )
 
 
 
