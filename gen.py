@@ -12,6 +12,8 @@ import numpy as np
 import poisson_disc as pd
 import yaml
 
+np.random.seed(2022)
+
 with open("data.yml") as fi:
     data = yaml.safe_load(fi.read())
 
