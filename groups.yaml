@@ -3,6 +3,7 @@
   shape: tri
   items:
     - astropy
+    - poliastro
     - sunpy
     - skypy
 - name: Packaging
