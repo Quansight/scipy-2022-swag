@@ -4,7 +4,7 @@
 python gen.py
 ```
 
-You may need to install the (Raleway)[https://fonts.google.com/specimen/Raleway font] and the `poisson_disc`, `pyyaml`, and `matplotlib` packages.
+You may need to install the [Raleway font](https://fonts.google.com/specimen/Raleway) and the `poisson_disc`, `pyyaml`, and `matplotlib` packages.
 
 # Modifying the Cards
 
