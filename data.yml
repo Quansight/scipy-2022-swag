@@ -196,6 +196,21 @@
     
     "I got confused when you told me it
     only has 3249 stars on GitHub"
+
+- name: poliastro
+  meth: tri
+  power: 3
+  short: 'Library – Rare'
+  desc: |+
+    >>> import poliastro
+
+    Interactive Astrodynamics and
+    Orbital Mechanics, with a focus on
+    ease of use, speed, and quick
+    visualization.
+
+    "Per Python ad Astra"
+
     
 - name: Bokeh
   meth: noise
