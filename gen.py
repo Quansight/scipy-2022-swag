@@ -240,6 +240,8 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
 
 total = len([x for g in groups for x in g["items"]])
 k = 0
+
+gallery = []
 for g in groups[:]:
     for i, it in enumerate(g["items"], start=1):
         k += 1
@@ -264,6 +266,7 @@ for g in groups[:]:
         else:
             raise ValueError("matching")
         name = f"cards-groups/{g['name']}-{i}-{it}-card.png"
+        gallery.append(f"<img src='{name}' width='30%' /> ")
         print(name)
         fig.savefig(
             name,
@@ -272,3 +275,6 @@ for g in groups[:]:
             dpi=DPI,
         )
         plt.close("all")
+
+print("you can update the readme with")
+print("".join(gallery))
