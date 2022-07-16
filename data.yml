@@ -336,7 +336,6 @@
     
     "There are so many resources on
     how to learn about scikit !"
-    
 - name: Pytest
   meth: tri
   short: "Library - Common"
@@ -377,3 +376,13 @@
     "Sometimes, magic is just someone 
     spending more time on something than
     anyone else might reasonably expect."
+
+- name: "Pandera"
+  meth: hex
+  desc: |+
+    A Statistical Data Testing Toolkit.
+
+    Provides a flexible and expressive
+    API for performing data validation
+    on dataframes to make data processing
+    pipelines more readable and robust.
