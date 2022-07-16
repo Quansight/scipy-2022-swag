@@ -337,3 +337,43 @@
     "There are so many resources on
     how to learn about scikit !"
     
+- name: Pytest
+  meth: tri
+  short: "Library - Common"
+  power: 3
+  desc: |+
+    >>> def test_foo():
+    ...     assert 1 + 2 == 3
+    
+    "My needs are simple: running a 
+    collection of test functions. 
+    I don't use plugins, fixtures, 
+    or other advanced features...
+    but I could if I wanted them."
+- name: Hypothesis
+  meth: tri
+  short: "Library - Rare"
+  power: 5
+  desc: |+
+    >>> from hypothesis import given
+    
+    Find more bugs with less work, by
+    generating diverse test inputs.
+    
+    "The problem is that it's too good at
+    finding bugs, so I can't sneak broken
+    code in before the feature freeze."
+- name: Ghostwriter
+  meth: tri
+  short: "CLI - Rare"
+  power: 4
+  desc: |+
+    $ hypothesis write gzip.compress
+    $ hypothesis write numpy.matmul
+    
+    A command-line interface which can
+    write property-based tests for you.
+    
+    "Sometimes, magic is just someone 
+    spending more time on something than
+    anyone else might reasonably expect."

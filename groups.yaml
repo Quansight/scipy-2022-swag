@@ -54,7 +54,7 @@
   shape: tri
   cmap: Blues
   items:
-    - numpy 
+    - numpy
     - zarr
     - xarray
     - NetworkX
@@ -70,3 +70,10 @@
     - GeoPandas
   shape: tri
   cmap: BrBG
+- name: Testing
+  items:
+    - Pytest
+    - Hypothesis
+    - Ghostwriter
+  shape: tri
+  cmap: rainbow  # *not* jet
