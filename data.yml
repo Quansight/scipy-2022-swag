@@ -38,8 +38,6 @@
     
 - name: SciPy 2022
   meth: tri
-  short: "Conference – Epic"
-  power: 5
   desc: |+
     July 11 – July 17, Austin, TX
     
@@ -51,8 +49,6 @@
     Thanks to all organizers.
 - name: NumFOCUS
   meth: tri
-  power: 5
-  short: 501(c)3 – Legendary
   desc: |+
     "Infrastructure is the backbone
     of economic growth."
@@ -64,8 +60,6 @@
     https://numfocus.org/donate
 - name: Xarray
   meth: sca
-  power: 3
-  short: "Library - Common"
   desc: |+
     Package that makes working with
     labeled multi-dimensional arrays
@@ -76,8 +70,6 @@
     by their first names"
 - name: Zarr
   meth: hex
-  power: 2
-  short: "Library & Fileformat - Rare"
   desc: |+
     Chunked, compressed, N-dimensional 
     arrays storage format and library.
@@ -86,8 +78,6 @@
     of less than 128 Tb.
 - name: NumPy 
   meth: tri
-  power: 2
-  short: 'Library – Rare'
   desc: |+
      >>> import numpy as np
         
@@ -107,8 +97,6 @@
     "I'm not afraid of math."
 
 
-  power: 3
-  short: "Library – Common"
 - name: Dask
   meth: tri
   desc: |
@@ -121,8 +109,6 @@
     you meant Racks, not Cores"
 
 
-  power: 5
-  short: "Library – Rare"
 - meth: tri
   desc: |
     >>> import matplotlib.pyplot as plt
@@ -136,8 +122,6 @@
     itself that clearly"
 
   name: Matplotlib
-  power: 4
-  short: "Library – Common"
 - name: Scikit-Image
   meth: hex
   desc: |+
@@ -149,8 +133,6 @@
     "You can just call it scikit for
     short, everybody will understand" 
 
-  power: 5
-  short: "Library – Rare"
 - name: PyTorch Ignite
   desc: |+
     High-level library to help with
@@ -170,11 +152,8 @@
     advertising for a new release"
 
   name: Pandas
-  power: 1
-  short: "Library – Rare"
   meth: sca
 - name: SkyPy
-  short: Library
   desc:  |+
     Package for simulating the
     astrophysical sky. It
@@ -185,8 +164,6 @@
     simulations.
 - name: Astropy
   meth: tri
-  power: 3
-  short: 'Library – Rare'
   desc: |+
     >>> import astropy
 
@@ -199,8 +176,6 @@
 
 - name: poliastro
   meth: tri
-  power: 3
-  short: 'Library – Rare'
   desc: |+
     >>> import poliastro
 
@@ -214,8 +189,6 @@
     
 - name: Bokeh
   meth: noise
-  short: 'library - Rare'
-  power: 5
   desc: |+
     >>> import bokeh.plotting as bp
     
@@ -228,8 +201,6 @@
     
 - name: Conda
   meth: tri
-  short: "Package Manager – Common"
-  power: 5
   desc: |+
     $ conda create -n 3.10 python=3.10
     
@@ -242,8 +213,6 @@
     
 - name: Conda-Forge
   meth: hex
-  short: "Repository - Common"
-  power: 5
   desc: |+
     "I just wanted to let you know that
     I linted all conda-recipes in your
@@ -251,8 +220,6 @@
     excellent condition."
 - name: CuPy
   meth: hex
-  short: 'Library - Legendary'
-  power: 3
   desc: |+
     >>> import cupy as cp
     
@@ -265,8 +232,6 @@
     
 - name: Cython
   meth: hex
-  short: 'Language - Rare'
-  power: 5
   desc: |+
     An optimizing static compiler. It
     makes writing C extensions as easy
@@ -278,8 +243,6 @@
     
 - name: NetworkX
   meth: tri
-  short: "Library - Rare"
-  power: 4
   desc: |+
     >>> import networkx as nx
     
@@ -293,8 +256,6 @@
     
 - name: SunPy
   meth: tri
-  short: "Library - Rare"
-  power: 3
   desc: |+
     
     The community-developed, free and
@@ -307,8 +268,6 @@
 - note: maybe viridis ?
   meth: noise
   name: Numba
-  short: "Library – Rare"
-  power: 2
   desc: |+    
     JIT compiler that translates a subset
     of Python and NumPy code into fast
@@ -320,8 +279,6 @@
     
 - name: Spyder
   meth: sca
-  short: "IDE - Legendary"
-  power: 4
   desc: |+
     Scientific
     PYthon
@@ -333,8 +290,6 @@
     
 - name: SymPy
   meth: sca
-  short: "Library - Common"
-  power: 3
   desc: |+
     Library for symbolic mathematics.
     It aims to become a full-featured
@@ -346,8 +301,6 @@
     differentiable nowhere."
 - name: IPython
   meth: tri
-  short: "CLI – Rare"
-  power: 5
   desc: |+
     IPython provides a rich architecture
     for interactive computing with a
@@ -359,8 +312,6 @@
                         -- Fernando Pérez
 - name: FEniCS
   meth: hex
-  short: "Library - Rare"
-  power: 3
   desc: |+
     Quickly translate scientific models
     into efficient finite element code
@@ -369,8 +320,6 @@
     contain 'raise from hashes'"
 - name: Jupyter
   meth: sca
-  short: "IDE - Common"
-  power: 4
   desc: |+
     Web services for interactive
     computing across all programming
@@ -381,8 +330,6 @@
     sensitivity?"
 - name: "Scikit-Learn"
   meth: hex
-  short: "Library - Common"
-  power: 3
   desc: |+
     Simple and efficient tools for
     predictive data analysis.
