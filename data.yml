@@ -386,3 +386,14 @@
     API for performing data validation
     on dataframes to make data processing
     pipelines more readable and robust.
+- name: "Pyjanitor"
+  meth: hex
+  desc: |+
+    A clean API for cleaning data.
+    
+    Inspired by the ease-of-use and
+    expressiveness of the dplyr package
+    of the R statistical language
+    ecosystem, we have evolved pyjanitor
+    into a language for expressing the
+    data processing DAG for pandas users.
