@@ -70,12 +70,18 @@
     by their first names"
 - name: Zarr
   meth: hex
-  desc: |+
-    Chunked, compressed, N-dimensional 
-    arrays storage format and library.
-    
-    Also works with small datasets, 
-    of less than 128 Tb.
+  desc: 
+    - |+
+      Chunked, compressed, N-dimensional 
+      arrays storage format and library.
+      
+      "Also works with small datasets, 
+      of less than 128 Tb."
+    - |+
+      Chunked, compressed, N-dimensional 
+      arrays storage format and library.
+
+      "looking forward to  pirate day"
 - name: NumPy 
   meth: tri
   desc: |+
