@@ -281,7 +281,7 @@ for k, var in enumerate(flatten, start=1):
         **var,
         tn=f"{k}/{total}",
     )
-    name = f"cards-groups/{var['short']}-{k}-{var['name']}-card.png"
+    name = f"cards-groups/{var['short']}-{k}-{var['name']}-card.png".replace(" ", "-")
     gallery.append(f"<img src='{name}' width='30%' /> ")
     print(name)
     fig.savefig(
