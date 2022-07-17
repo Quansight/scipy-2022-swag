@@ -68,6 +68,7 @@
   items:
     - Pandas
     - GeoPandas
+    - Pandera
   shape: tri
   cmap: BrBG
 - name: Testing
