@@ -1,3 +1,8 @@
+# 2022 archive.
+
+To see the cards as distributed at Scipy 2022 see the 2022 tag.
+
+
 # Usage
 
 ```
