@@ -69,6 +69,7 @@
     - Pandas
     - GeoPandas
     - Pandera
+    - Pyjanitor
   shape: tri
   cmap: BrBG
 - name: Testing
