@@ -36,6 +36,7 @@
     - Numfocus
     - Scipy 2022
     - OpenTeams
+    - Scientific Python
 - name: IDE
   shape: tri
   cmap: Oranges
@@ -68,6 +69,7 @@
   items:
     - Pandas
     - GeoPandas
+    - Pandera
   shape: tri
   cmap: BrBG
 - name: Testing

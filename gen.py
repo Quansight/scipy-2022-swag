@@ -241,40 +241,56 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
 total = len([x for g in groups for x in g["items"]])
 k = 0
 
+flatten = []
+
 gallery = []
 for g in groups[:]:
     for i, it in enumerate(g["items"], start=1):
         k += 1
         matching = [d for d in data if d["name"].lower() == it.lower()]
-        fig, ax = plt.subplots()
-        fig.set_figheight(20)
-        fig.set_figwidth(12)
-        DPI = 150
 
         if len(matching) == 1:
             dx = matching[0]
-            plot_one(
-                ax,
-                cmap=g["cmap"],
-                meth=g["shape"],
-                name=dx["name"],
-                short=g["name"],
-                desc=dx["desc"],
-                gn=f'{i}/{len(g["items"])}',
-                tn=f"{k}/{total}",
-            )
+            desc = dx["desc"]
+
+            if isinstance(desc, str):
+                desc = [desc]
+            for d in desc:
+                flatten.append(
+                    dict(
+                        cmap=g["cmap"],
+                        meth=g["shape"],
+                        name=dx["name"],
+                        short=g["name"],
+                        desc=d,
+                        gn=f'{i}/{len(g["items"])}',
+                    )
+                )
         else:
             raise ValueError("matching")
-        name = f"cards-groups/{g['name']}-{i}-{it}-card.png"
-        gallery.append(f"<img src='{name}' width='30%' /> ")
-        print(name)
-        fig.savefig(
-            name,
-            bbox_inches="tight",
-            pad_inches=0,
-            dpi=DPI,
-        )
-        plt.close("all")
+
+total = len(flatten)
+for k, var in enumerate(flatten, start=1):
+    fig, ax = plt.subplots()
+    fig.set_figheight(20)
+    fig.set_figwidth(12)
+    DPI = 150
+
+    plot_one(
+        ax,
+        **var,
+        tn=f"{k}/{total}",
+    )
+    name = f"cards-groups/{var['short']}-{k}-{var['name']}-card.png".replace(" ", "-")
+    gallery.append(f"<img src='{name}' width='30%' /> ")
+    print(name)
+    fig.savefig(
+        name,
+        bbox_inches="tight",
+        pad_inches=0,
+        dpi=DPI,
+    )
+    plt.close("all")
 
 print("you can update the readme with")
 print("".join(gallery))

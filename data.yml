@@ -70,15 +70,17 @@
     by their first names"
 - name: Zarr
   meth: hex
-  desc: |+
-    Chunked, compressed, N-dimensional 
-    arrays storage format and library.
-    
-    Also works with small datasets, 
-    of less than 128 Tb.
+  desc: 
+    - |+
+      Chunked, compressed, N-dimensional 
+      arrays storage format and library.
+      
+      "Also works with small datasets, 
+      of less than 128 Tb."
 - name: NumPy 
   meth: tri
-  desc: |+
+  desc: 
+   - |+
      >>> import numpy as np
         
      ND-arrays at your fingertips.
@@ -86,6 +88,14 @@
         
      "I thought it was part of the
      standard library."
+   - |+
+     >>> import numpy as np
+        
+     ND-arrays at your fingertips.
+     Pronounced "NUM-py" not "NUM-pee".
+        
+     "Loops ? Which loops ? Where we go
+     we don't need loops."
 - name: SciPy
   meth: hex
   desc: |+
@@ -99,7 +109,7 @@
 
 - name: Dask
   meth: tri
-  desc: |
+  desc: |+
     >>> import dask as da
 
     Parallelism for analytics,
@@ -110,16 +120,27 @@
 
 
 - meth: tri
-  desc: |
-    >>> import matplotlib.pyplot as plt
+  desc: 
+    - |+
+      >>> import matplotlib.pyplot as plt
 
-    Library for creating static, animated,
-    and interactive visualizations.
-    It makes easy things easier and hard
-    things possible.
-    
-    "I've never seen the data speak for
-    itself that clearly"
+      Library for creating static, animated,
+      and interactive visualizations.
+      It makes easy things easier and hard
+      things possible.
+      
+      "I've never seen the data speak for
+      itself that clearly"
+    - |+
+      >>> import matplotlib.pyplot as plt
+
+      Library for creating static, animated,
+      and interactive visualizations.
+      It makes easy things easier and hard
+      things possible.
+
+      "I'm wondering what are they plotting
+      behind our backs ..."
 
   name: Matplotlib
 - name: Scikit-Image
@@ -265,8 +286,7 @@
     "I got even more confused when you 
     told me it has only 688 stars."
     
-- note: maybe viridis ?
-  meth: noise
+- meth: noise
   name: Numba
   desc: |+    
     JIT compiler that translates a subset
@@ -330,16 +350,23 @@
     sensitivity?"
 - name: "Scikit-Learn"
   meth: hex
-  desc: |+
-    Simple and efficient tools for
-    predictive data analysis.
-    
-    "There are so many resources on
-    how to learn about scikit !"
-    
+  desc: 
+    - |+
+      Simple and efficient tools for
+      predictive data analysis.
+      
+      "There are so many resource
+      to learn about scikit !"
+    - |+
+      Simple and efficient tools for
+      predictive data analysis.
+      
+      "Junior devs need to experiment
+      with if/else conditions, until
+      they do it fast enough, then it 
+      becomes machine learning"
 - name: Pytest
   meth: tri
-  short: "Library - Common"
   power: 3
   desc: |+
     >>> def test_foo():
@@ -352,7 +379,6 @@
     but I could if I wanted them."
 - name: Hypothesis
   meth: tri
-  short: "Library - Rare"
   power: 5
   desc: |+
     >>> from hypothesis import given
@@ -365,7 +391,6 @@
     code in before the feature freeze."
 - name: Ghostwriter
   meth: tri
-  short: "CLI - Rare"
   power: 4
   desc: |+
     $ hypothesis write gzip.compress
@@ -389,3 +414,22 @@
 
     "We used to work in the time domain,
     but that was just a phase."
+
+- name: "Pandera"
+  meth: hex
+  desc: |+
+    A Statistical Data Testing Toolkit.
+
+    Provides a flexible and expressive
+    API for performing data validation
+    on dataframes to make data processing
+    pipelines more readable and robust.
+- name: "Scientific Python"
+  meth: tri
+  desc: |+
+    A community effort to better
+    coordinate the Scientific Python
+    ecosystem and grow the community.
+
+    https://scientific-python.org
+
