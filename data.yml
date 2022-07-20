@@ -387,5 +387,5 @@
     A library for audio and music
     signal processing.
 
-    "We used to process audio in the time domain,
-    but it turned out that was just a phase."
+    "We used to work in the time domain,
+    but that was just a phase."
