@@ -12,51 +12,51 @@
 
 - name: OpenTeams
   desc: |+
-    A Network of Enterprise Solution 
-    Architects using open Source talent 
+    A Network of Enterprise Solution
+    Architects using open Source talent
     to build and maintain your software
     solutions.
 - name: MathJax
   desc: |+
     A JavaScript display engine for
     mathematics that works in all
-    browsers. 
+    browsers.
     It just works.
-    
+
     "It's like in The matrix. You
-    get so used to it, you don't even 
+    get so used to it, you don't even
     see the LaTeX code anymore."
 - name: GeoPandas
   desc: |+
     An open source project to make
     working with geospatial data in
     Python easier.
-    
+
     "I'm pretty convinced dataframes
     are actually spherical; and values
     attracted toward the center of it."
-    
+
 - name: SciPy 2022
   meth: tri
   desc: |+
     July 11 – July 17, Austin, TX
-    
+
     Best SciPy Conference – so far.
-    
+
     Come for the language,
     stay for the community.
-    
+
     Thanks to all organizers.
 - name: NumFOCUS
   meth: tri
   desc: |+
     "Infrastructure is the backbone
     of economic growth."
-    
+
     Nothing  would be possible without
     all the hands working behind the
     scene at NumFOCUS.
-    
+
     https://numfocus.org/donate
 - name: Xarray
   meth: sca
@@ -64,33 +64,33 @@
     Package that makes working with
     labeled multi-dimensional arrays
     simple, efficient, and fun!
-    
+
     "I'm so familiar with higher
     dimensions I call them
     by their first names"
 - name: Zarr
   meth: hex
   desc: |+
-    Chunked, compressed, N-dimensional 
+    Chunked, compressed, N-dimensional
     arrays storage format and library.
-    
-    Also works with small datasets, 
+
+    Also works with small datasets,
     of less than 128 Tb.
-- name: NumPy 
+- name: NumPy
   meth: tri
   desc: |+
      >>> import numpy as np
-        
+
      ND-arrays at your fingertips.
      Pronounced "NUM-py" not "NUM-pee".
-        
+
      "I thought it was part of the
      standard library."
 - name: SciPy
   meth: hex
   desc: |+
     >>> import scipy as sp
-    
+
     Fundamental algorithms for
     scientific computing in Python
 
@@ -104,7 +104,7 @@
 
     Parallelism for analytics,
     performance at scale.
-    
+
     "Oh, when you said 48, I though
     you meant Racks, not Cores"
 
@@ -117,7 +117,7 @@
     and interactive visualizations.
     It makes easy things easier and hard
     things possible.
-    
+
     "I've never seen the data speak for
     itself that clearly"
 
@@ -129,9 +129,9 @@
 
     scikit-image is a collection of
     algorithms for image processing.
-    
+
     "You can just call it scikit for
-    short, everybody will understand" 
+    short, everybody will understand"
 
 - name: PyTorch Ignite
   desc: |+
@@ -139,14 +139,14 @@
     training and evaluating neural
     networks in PyTorch flexibly and
     transparently.
-    
+
     "The spark that made my heart burn
     for machine learning"
 - desc: |+
     Fast, powerful, flexible, and easy
     to use data analysis and manipulation
     tool.
-    
+
     "Stockholm syndrome is real, I got
     confused as to why the local zoo was
     advertising for a new release"
@@ -170,7 +170,7 @@
     Common core package for Astronomy
     to foster an ecosystem of
     interoperable astronomy packages.
-    
+
     "I got confused when you told me it
     only has 3249 stars on GitHub"
 
@@ -186,31 +186,31 @@
 
     "Per Python ad Astra"
 
-    
+
 - name: Bokeh
   meth: noise
   desc: |+
     >>> import bokeh.plotting as bp
-    
+
     Create interactive visualizations
     for modern web browsers. It helps
     you build beautiful graphics, ranging
     from simple plots to complex
     dashboards with streaming datasets.
 
-    
+
 - name: Conda
   meth: tri
   desc: |+
     $ conda create -n 3.10 python=3.10
-    
+
     Package, dependency and environment
-    management for any language. 
-    
+    management for any language.
+
     "really you can even install npm,
     fpm... Like turtles it's package
     managers all the way down"
-    
+
 - name: Conda-Forge
   meth: hex
   desc: |+
@@ -222,61 +222,61 @@
   meth: hex
   desc: |+
     >>> import cupy as cp
-    
+
     NumPy/SciPy-compatible Array Library
     for GPU-accelerated Computing with
     Python
-    
+
     "I thought my code was broken,
     in reality it was just that fast."
-    
+
 - name: Cython
   meth: hex
   desc: |+
     An optimizing static compiler. It
     makes writing C extensions as easy
     as Python itself.
-    
+
     "I've only looked at your Python code;
-    there are just a couple typos here, 
+    there are just a couple typos here,
     where you've written 'cdef'"
-    
+
 - name: NetworkX
   meth: tri
   desc: |+
     >>> import networkx as nx
-    
+
     NetworkX is a package for the
     creation, manipulation, and study
-    of the structure, dynamics, and 
+    of the structure, dynamics, and
     functions of complex networks.
-    
+
     "I'm going to do some networking in
     the hallway track"
-    
+
 - name: SunPy
   meth: tri
   desc: |+
-    
+
     The community-developed, free and
     open-source solar data analysis
     environment.
-    
-    "I got even more confused when you 
+
+    "I got even more confused when you
     told me it has only 688 stars."
-    
+
 - note: maybe viridis ?
   meth: noise
   name: Numba
-  desc: |+    
+  desc: |+
     JIT compiler that translates a subset
     of Python and NumPy code into fast
     machine code.
-    
+
     "I was not sure why beautiful code
     would be faster. I guess I
     misunderstood what decorated meant"
-    
+
 - name: Spyder
   meth: sca
   desc: |+
@@ -284,17 +284,17 @@
     PYthon
     Developement
     EnviRonment.
-    
+
     "I originally thought it was made
     for web developers".
-    
+
 - name: SymPy
   meth: sca
   desc: |+
     Library for symbolic mathematics.
     It aims to become a full-featured
     computer algebra system (CAS).
-    
+
     "As a real world example, let's
     consider the Weierstrass function
     that is continuous everywhere but
@@ -306,7 +306,7 @@
     for interactive computing with a
     powerful interactive shell and
     a kernel for Jupyter.
-    
+
     "In IPython we have weaponized your
     tab key."
                         -- Fernando Pérez
@@ -315,7 +315,7 @@
   desc: |+
     Quickly translate scientific models
     into efficient finite element code
-    
+
     "I'm sad the codebase does not
     contain 'raise from hashes'"
 - name: Jupyter
@@ -324,7 +324,7 @@
     Web services for interactive
     computing across all programming
     languages.
-    
+
     "Are those folks in the business
     of weird spelling and case
     sensitivity?"
@@ -333,7 +333,7 @@
   desc: |+
     Simple and efficient tools for
     predictive data analysis.
-    
+
     "There are so many resources on
     how to learn about scikit !"
 - name: Pytest
@@ -343,10 +343,10 @@
   desc: |+
     >>> def test_foo():
     ...     assert 1 + 2 == 3
-    
-    "My needs are simple: running a 
-    collection of test functions. 
-    I don't use plugins, fixtures, 
+
+    "My needs are simple: running a
+    collection of test functions.
+    I don't use plugins, fixtures,
     or other advanced features...
     but I could if I wanted them."
 - name: Hypothesis
@@ -355,10 +355,10 @@
   power: 5
   desc: |+
     >>> from hypothesis import given
-    
+
     Find more bugs with less work, by
     generating diverse test inputs.
-    
+
     "The problem is that it's too good at
     finding bugs, so I can't sneak broken
     code in before the feature freeze."
@@ -369,11 +369,11 @@
   desc: |+
     $ hypothesis write gzip.compress
     $ hypothesis write numpy.matmul
-    
+
     A command-line interface which can
     write property-based tests for you.
-    
-    "Sometimes, magic is just someone 
+
+    "Sometimes, magic is just someone
     spending more time on something than
     anyone else might reasonably expect."
 
@@ -390,10 +390,8 @@
   meth: hex
   desc: |+
     A clean API for cleaning data.
-    
-    Inspired by the ease-of-use and
-    expressiveness of the dplyr package
-    of the R statistical language
-    ecosystem, we have evolved pyjanitor
-    into a language for expressing the
-    data processing DAG for pandas users.
+
+    Provides a library of functions
+    for common data cleaning operations
+    on pandas dataframes to make data
+    cleaning pipelines easy to express.
