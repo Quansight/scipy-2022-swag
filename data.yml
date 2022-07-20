@@ -412,3 +412,11 @@
     API for performing data validation
     on dataframes to make data processing
     pipelines more readable and robust.
+- name: "Scientific Python"
+  meth: tri
+  desc: |+
+    A community effort to better
+    coordinate the Scientific Python
+    ecosystem and grow the community.
+
+    https://scientific-python.org

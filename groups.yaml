@@ -36,6 +36,7 @@
     - Numfocus
     - Scipy 2022
     - OpenTeams
+    - Scientific Python
 - name: IDE
   shape: tri
   cmap: Oranges
