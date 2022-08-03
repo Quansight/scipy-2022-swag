@@ -20,7 +20,7 @@
     - cython
     - numba
     - cupy
-- name: Vizualisation
+- name: Visualization
   cmap: winter
   shape: hex
   items:
