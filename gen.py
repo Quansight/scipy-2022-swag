@@ -125,8 +125,9 @@ y = y * 10 - 5
 # plot:
 
 
-
-def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
+def plot_one(
+    ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0", logo_inset=False
+):
     if meth == "hex":
         ax.hexbin(
             x,
@@ -163,7 +164,15 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
         Polygon(rect(2.4, 2.1, 0.4)),  # whiteish bg
     ]
 
-    axins = ax.inset_axes([-1.7, 0.4, 1.7 * 2, 2.0], transform=ax.transData)
+    Y = 1.7
+    if logo_inset:
+        INS = 0.1
+    else:
+        INS = 0
+    axins = ax.inset_axes(
+        [-Y + INS, 0.4 + INS, 2 * Y - 2 * INS, 2.0 - 2 * INS], transform=ax.transData
+    )
+
     logo = mpimg.imread(f"logos/{name.lower()}.png")
     # newax = fig.add_axes([0.20, 0.48, 0.62, 0.22], anchor='C', zorder=1)
     if name == "stefanv":
@@ -179,8 +188,9 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
     p = PatchCollection(patches, alpha=0.90, ec=cc, fc="white", lw=0)
     ax.add_collection(p)
 
-    crect = Polygon(rect(-2.55, 2.1, -3.00))  # whiteish bg
-    p2 = PatchCollection([crect], alpha=0.90, ec=cc, fc=get_cmap(cmap)(0.5), lw=0)
+    crect = Polygon(rect(-2.55, 2.1, -3.00))
+    # p2 = PatchCollection([crect], alpha=0.80, ec=cc, fc=get_cmap(cmap)(0.7), lw=0)
+    p2 = PatchCollection([crect], alpha=0.80, ec=cc, fc="white", lw=0)
     ax.add_collection(p2)
     footer = "Trade this card with other attendees. Find a pair.\nCome get more at NumFOCUS or QuanSight Booth"
 
@@ -215,17 +225,18 @@ def plot_one(ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0"):
     #    transform=ax.transData,
     # )
     ax.text(
-        -2.0,
-        -0.5,
+        -1.9,
+        -0.55,  # vertical
         desc,
-        fontsize=22,
+        fontsize=21,
         fontfamily="Menlo",
         fontweight="light",
         transform=ax.transData,
         va="top",
     )
 
-    fcolor = "white" if cmap in {"gray", "twilight", "gist_heat"} else "black"
+    # fcolor = "white" if cmap in {"gray", "twilight", "gist_heat"} else "black"
+    fcolor = "black"
 
     txt = ax.text(
         -2.0, -2.9, footer + "   " + tn, fontsize=18, fontfamily="Raleway", color=fcolor
@@ -264,10 +275,11 @@ for g in groups[:]:
                         short=g["name"],
                         desc=d,
                         gn=f'{i}/{len(g["items"])}',
+                        logo_inset=dx.get("inset", False),
                     )
                 )
         else:
-            raise ValueError("matching")
+            raise ValueError(matching, it)
 
 total = len(flatten)
 for k, var in enumerate(flatten, start=1):

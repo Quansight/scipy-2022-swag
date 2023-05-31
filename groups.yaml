@@ -34,7 +34,7 @@
   shape: tri
   items:
     - Numfocus
-    - Scipy 2022
+    - Scipy 2023
     - OpenTeams
     - Scientific Python
 - name: IDE

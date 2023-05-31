@@ -35,6 +35,19 @@
     "I'm pretty convinced dataframes
     are actually spherical; and values
     attracted toward the center of it."
+
+- name: SciPy 2023
+  meth: tri
+  desc: |+
+    July 10 – July 16, Austin, TX
+    
+    Best SciPy Conference – so far.
+    
+    Come for the language,
+    stay for the community.
+    
+    Thanks to all organizers.
+
     
 - name: SciPy 2022
   meth: tri
@@ -69,6 +82,7 @@
     dimensions I call them
     by their first names"
 - name: Zarr
+  inset: True
   meth: hex
   desc: 
     - |+
@@ -143,8 +157,10 @@
       behind our backs ..."
 
   name: Matplotlib
+  inset: True
 - name: Scikit-Image
   meth: hex
+  inset: True
   desc: |+
     >>> import skimage
 
@@ -193,9 +209,10 @@
     interoperable astronomy packages.
     
     "I got confused when you told me it
-    only has 3249 stars on GitHub"
+    only has 3798 stars on GitHub"
 
 - name: poliastro
+  inset: True
   meth: tri
   desc: |+
     >>> import poliastro
@@ -284,7 +301,7 @@
     environment.
     
     "I got even more confused when you 
-    told me it has only 688 stars."
+    told me it has only 779 stars."
     
 - meth: noise
   name: Numba
@@ -366,6 +383,7 @@
       they do it fast enough, then it 
       becomes machine learning"
 - name: Pytest
+  inset: True
   meth: tri
   power: 3
   desc: |+
@@ -378,6 +396,7 @@
     or other advanced features...
     but I could if I wanted them."
 - name: Hypothesis
+  inset: True
   meth: tri
   power: 5
   desc: |+
@@ -390,6 +409,7 @@
     finding bugs, so I can't sneak broken
     code in before the feature freeze."
 - name: Ghostwriter
+  inset: True
   meth: tri
   power: 4
   desc: |+
@@ -413,6 +433,7 @@
     on dataframes to make data processing
     pipelines more readable and robust.
 - name: "Scientific Python"
+  inset: True
   meth: tri
   desc: |+
     A community effort to better
