@@ -423,6 +423,18 @@
     spending more time on something than
     anyone else might reasonably expect."
 
+- name: librosa
+  short: "Library - Rare"
+  power: 3
+  desc: |+
+    >>> import librosa
+
+    A library for audio and music
+    signal processing.
+
+    "We used to work in the time domain,
+    but that was just a phase."
+
 - name: "Pandera"
   meth: hex
   desc: |+
@@ -441,3 +453,4 @@
     ecosystem and grow the community.
 
     https://scientific-python.org
+

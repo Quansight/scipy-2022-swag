@@ -79,3 +79,8 @@
     - Ghostwriter
   shape: tri
   cmap: rainbow  # *not* jet
+- name: Domain libraries
+  cmap: magma
+  shape: hex
+  items:
+    - librosa
