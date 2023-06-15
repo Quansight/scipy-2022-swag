@@ -26,6 +26,27 @@
     "It's like in The matrix. You
     get so used to it, you don't even 
     see the LaTeX code anymore."
+
+- name: "Nebari"
+  desc: |+
+    Your open source data science
+    platform:
+    
+    Built for scale, designed for
+    collaboration.
+
+    “Nebari, not napari.
+    No, they’re not related.”
+    
+- name: "Conda-store"
+  desc: |+
+    Flexible, reproducible, and managed
+    data science environments for
+    collaborative teams. 
+
+    “It works on my machine.
+    And, yours too!”
+
 - name: GeoPandas
   desc: |+
     An open source project to make

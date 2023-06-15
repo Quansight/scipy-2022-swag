@@ -12,6 +12,7 @@
   items:
     - conda-forge
     - conda
+    - conda-store
 - name: Performance
   cmap: twilight
   shape: scatter
@@ -44,6 +45,7 @@
     - IPython
     - Jupyter
     - Spyder
+    - nebari
 - name: Mathematics
   cmap: Purples
   shape: noise
